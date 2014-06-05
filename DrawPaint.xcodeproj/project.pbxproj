@@ -22,6 +22,10 @@
 		322053DA193F0F9E0022A363 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 322053BE193F0F9E0022A363 /* CoreData.framework */; };
 		322053E2193F0F9E0022A363 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 322053E0193F0F9E0022A363 /* InfoPlist.strings */; };
 		322053E4193F0F9E0022A363 /* DrawPaintTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 322053E3193F0F9E0022A363 /* DrawPaintTests.m */; };
+		322053F0193F0FFA0022A363 /* Mark.m in Sources */ = {isa = PBXBuildFile; fileRef = 322053EF193F0FFA0022A363 /* Mark.m */; };
+		322053F3193F11970022A363 /* Vertex.m in Sources */ = {isa = PBXBuildFile; fileRef = 322053F2193F11970022A363 /* Vertex.m */; };
+		322053F6193F154D0022A363 /* Dot.m in Sources */ = {isa = PBXBuildFile; fileRef = 322053F5193F154D0022A363 /* Dot.m */; };
+		322053F9193F16880022A363 /* Stroke.m in Sources */ = {isa = PBXBuildFile; fileRef = 322053F8193F16880022A363 /* Stroke.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,14 @@
 		322053DF193F0F9E0022A363 /* DrawPaintTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DrawPaintTests-Info.plist"; sourceTree = "<group>"; };
 		322053E1193F0F9E0022A363 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		322053E3193F0F9E0022A363 /* DrawPaintTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawPaintTests.m; sourceTree = "<group>"; };
+		322053EE193F0FFA0022A363 /* Mark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mark.h; path = Prototype/Mark.h; sourceTree = "<group>"; };
+		322053EF193F0FFA0022A363 /* Mark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Mark.m; path = Prototype/Mark.m; sourceTree = "<group>"; };
+		322053F1193F11970022A363 /* Vertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Vertex.h; path = Prototype/Vertex.h; sourceTree = "<group>"; };
+		322053F2193F11970022A363 /* Vertex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Vertex.m; path = Prototype/Vertex.m; sourceTree = "<group>"; };
+		322053F4193F154D0022A363 /* Dot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Dot.h; path = Prototype/Dot.h; sourceTree = "<group>"; };
+		322053F5193F154D0022A363 /* Dot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Dot.m; path = Prototype/Dot.m; sourceTree = "<group>"; };
+		322053F7193F16880022A363 /* Stroke.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Stroke.h; path = Prototype/Stroke.h; sourceTree = "<group>"; };
+		322053F8193F16880022A363 /* Stroke.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Stroke.m; path = Prototype/Stroke.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +127,7 @@
 		322053C0193F0F9E0022A363 /* DrawPaint */ = {
 			isa = PBXGroup;
 			children = (
+				322053ED193F0FA80022A363 /* Prototype */,
 				322053C9193F0F9E0022A363 /* AppDelegate.h */,
 				322053CA193F0F9E0022A363 /* AppDelegate.m */,
 				322053CF193F0F9E0022A363 /* Images.xcassets */,
@@ -151,6 +164,21 @@
 				322053E0193F0F9E0022A363 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		322053ED193F0FA80022A363 /* Prototype */ = {
+			isa = PBXGroup;
+			children = (
+				322053EE193F0FFA0022A363 /* Mark.h */,
+				322053EF193F0FFA0022A363 /* Mark.m */,
+				322053F1193F11970022A363 /* Vertex.h */,
+				322053F2193F11970022A363 /* Vertex.m */,
+				322053F4193F154D0022A363 /* Dot.h */,
+				322053F5193F154D0022A363 /* Dot.m */,
+				322053F7193F16880022A363 /* Stroke.h */,
+				322053F8193F16880022A363 /* Stroke.m */,
+			);
+			name = Prototype;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,8 +276,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				322053F0193F0FFA0022A363 /* Mark.m in Sources */,
 				322053CE193F0F9E0022A363 /* DrawPaint.xcdatamodeld in Sources */,
+				322053F3193F11970022A363 /* Vertex.m in Sources */,
+				322053F6193F154D0022A363 /* Dot.m in Sources */,
 				322053CB193F0F9E0022A363 /* AppDelegate.m in Sources */,
+				322053F9193F16880022A363 /* Stroke.m in Sources */,
 				322053C7193F0F9E0022A363 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
